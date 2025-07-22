@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Form</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="myForm">
+
+    <!-- First Name -->
+    <label>First Name:</label>
+    <input type="text" id="firstname" />
+    <ul id="firstnameErrors">
+      <li id="fname_capital">❌Start with capital letter</li>
+      <li id="fname_onlyLetters">❌Only letters allowed</li>
+      <li id="fname_noSpaces">❌No spaces</li>
+      <li id="fname_minLength">❌At least 3 letters</li>
+    </ul>
+
+    <!-- Last Name -->
+    <label>Last Name:</label>
+    <input type="text" id="lastname" />
+    <ul id="lastnameErrors">
+      <li id="capital">❌Start with capital letter</li>
+      <li id="onlyLetters">❌Only letters allowed</li>
+      <li id="noSpaces">❌No spaces</li>
+      <li id="minLength">❌At least 3 letters</li>
+    </ul>
+
+    <!-- Phone -->
+    <label>Phone:</label>
+    <input type="text" id="phone" />
+    <ul id="phoneErrors">
+      <li id="start">❌Start with 010, 011, 012, or 015</li>
+      <li id="elevenDigits">❌Must be 11 digits</li>
+      <li id="noSpacePhone">❌No spaces</li>
+    </ul>
+
+    <!-- Birth Date -->
+    <label>Birth Date:</label>
+    <input type="text" id="birthdate" />
+    <ul id="birthdateErrors">
+      <li id="dateFormat">❌Correct format yyyy/mm/dd</li>
+    </ul>
+
+    <!-- Email -->
+    <label>Email:</label>
+    <input type="text" id="email" />
+    <ul id="emailErrors">
+      <li id="emailValidFormat">❌Must be a valid email (name@gmail.com)</li>
+      <li id="email_noSpace">❌No spaces</li>
+    </ul>
+
+    <!-- Password -->
+    <label>Password:</label>
+    <input type="password" id="password" />
+    <ul id="passwordErrors">
+      <li id="min8">❌At least 8 characters</li>
+      <li id="noSpacePass">❌No spaces</li>
+    </ul>
+
+    <!-- Confirm Password -->
+    <label>Confirm Password:</label>
+    <input type="password" id="confirmPassword" />
+    <ul id="confirmPasswordErrors">
+      <li id="matchPass">❌Must match password</li>
+    </ul>
+
+    <button type="submit">Submit</button>
+  </form>
+  <script src="app.js"></script>
+</body>
+</html>
